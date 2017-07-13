@@ -45,7 +45,6 @@ extern sysTimer *headTimer;
 // Funktionsprototypen
 void sysTimer_init();
 void sysTimer_add(sysTimer* address, long value, char * name, void (*callback)(void));
-void sysTimer_decrement();
 void sysTimer_process();
 
 #ifdef __cplusplus

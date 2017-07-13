@@ -67,7 +67,7 @@ void sysTimer_add(sysTimer* adresse, long value, char *name, void (*callback)(vo
 /**
  *  Dekrementiere Timer
  */
-void sysTimer_decrement(){
+static void sysTimer_decrement(){
 	// erstelle Referenz zum HeadTimer
 	sysTimer *refTimer = headTimer;
 	while(refTimer != NULL){
